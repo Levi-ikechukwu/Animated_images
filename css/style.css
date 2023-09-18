@@ -1,0 +1,144 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+.col-2{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.col-1 .col-2{
+    overflow: hidden;
+}
+.col-1{
+    margin-top: -70px;
+    width: 100%;
+    padding: 2% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin-right: -20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+}
+.col-1 p{
+    color: #777;
+    line-height: 22px;
+    margin: 15px 0 30px;
+    max-width: 500px;
+}
+.col-1 h1{
+    color: #000000;
+}
+ul{
+    position: absolute;
+    bottom: 30px;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    background-color: #bfbfbf;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+ul .active{
+    background-color: #333;
+}
+
+/** javascript **/
+.zoom {
+    animation: infinite 1s;
+}
+
+@keyframes identifier {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media(max-width: 427px){
+    .col-1{
+        width: 80%;
+        margin-top: -100px;
+        align-items: center;
+        justify-content: center;
+        padding:7px;
+        background-color: palevioletred;
+        
+    }
+    .row{
+        border-radius: 0%;
+    }
+    .col-1 p{
+        font-size: 12px;
+        color: beige;
+    }
+    .col-1 h1{
+        font-size: 20px;
+        max-width: 400px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 11px;
+        margin: 0;
+        cursor: pointer;
+    }
+    .col-2{
+       width: 80%; 
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .col-2 img{
+        width: 95%;
+        height: 50vh;
+    }
+    ul{
+        bottom: 40px;
+    }
+    ul li{
+        width: 15px;
+        height: 15px;
+        margin: 15px;
+    }
+}
+
+
+
